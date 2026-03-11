@@ -11,3 +11,5 @@ Necessary explanation of code
 5.The fifth paragraph is about importing and preprocessing land cover type data
 
 You must first download the data to your local system and modify the absolute path in the code before executing it and generating images !!!
+If you wish to directly use my data, please download the software from China (Baidu Cloud Disk) using the following link:
+https://pan.baidu.com/s/1SpBTfV3XTmp7Udw7T8YsdQ?pwd=xsaf Extraction code: xsaf
