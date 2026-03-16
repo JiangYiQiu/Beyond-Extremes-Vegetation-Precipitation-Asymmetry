@@ -14,15 +14,15 @@ We propose three novel Asymmetric Indices (AIs) to characterize the differential
 These indices are computed globally using multiple long-term satellite-derived and climate datasets (NDVI, LAI, GPP, precipitation) at 0.25° and 0.5° spatial resolutions.
 
 ## 🧰 Features
-Data preprocessing and resampling (NDVI, LAI, CRU, TerraClimate)
+* Data preprocessing and resampling (NDVI, LAI, CRU, TerraClimate)
 
-Pixel-wise and neighborhood-based (8-neighbor, 24-neighbor) AI calculation
+* Pixel-wise and neighborhood-based (8-neighbor, 24-neighbor) AI calculation
 
-Masking by aridity zones and vegetation types (IGBP classification)
+* Masking by aridity zones and vegetation types (IGBP classification)
 
-Statistical analyses: linear regression, significance testing, trend detection
+* Statistical analyses: linear regression, significance testing, trend detection
 
-High-resolution visualizations:
+### High-resolution visualizations:
 
 Global AI maps
 
@@ -36,21 +36,36 @@ Pairwise comparisons across data sources and resolutions
 
 ## 📁 Repository Structure
 
-├── Analyse and drawing code.ipynb   # Main Jupyter notebook with all analysis and plotting
+* Analyse and drawing code.ipynb      # Main Jupyter notebook with all analysis and plotting
 
-├── README.md                         # This file
+* README.md                           # This file
+
 
 ## 🛠️ Requirements
 The code requires Python 3.8+ and the following libraries:
 
-numpy, scipy, pandas
+numpy, scipy, pandas,matplotlib, seaborn,rasterio, rioxarray, xarray, netCDF4,geopandas, gdal,statsmodels, scikit-learn,tqdm, pyhdf, h5py
 
-matplotlib, seaborn
+## 🚀 How to Use
+* Download the required datasets and update the file paths in the notebook (The path in the code is an absolute path, so after downloading the data, you need to replace the path in the code with your local path).
 
-rasterio, rioxarray, xarray, netCDF4
+* Run the notebook step-by-step to reproduce all figures and statistical results.
 
-geopandas, gdal
+* Outputs include .tif raster files and publication-ready figures (saved in specified directories).
 
-statsmodels, scikit-learn
+## 📊 Output Figures
+The notebook generates over 30 figures, including:
 
-tqdm, pyhdf, h5py
+* Global maps of AIₛ, AIᵣ, AIₑ
+
+* Vegetation-type contribution pie charts
+
+* Density scatter plots for shrubland, grassland, savanna, and cropland
+
+* Time-series trends across climate zones
+
+* Pairwise correlation plots across data sources and time windows
+
+## 📬 Contact
+For questions or collaborations, please contact the corresponding author via the information provided in the manuscript（j798227437@mails.ccnu.edu.cn）
+[![华中师范大学](https://img.shields.io/badge/华中师范大学-CCNU-005826?logo=academicons&logoColor=white)](https://www.ccnu.edu.cn/)
